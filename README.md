@@ -39,7 +39,8 @@ By default:
   Here i have give you a simple i think it will help
   
       var xip=require('x-image-processing');
-			var product_image=req.files.product_pic;//raw file data(product_pic is file field name)
+      //raw file data(product_pic is file field name)
+			var product_image=req.files.product_pic;
 			xip.upload(product_image,'./public/images/product/',dt_join);
 			xip.resize('./public/images/product/thumb/',100,100);
 			xip.crop('./public/images/product/crop/',100,100,20,20);
